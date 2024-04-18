@@ -1,0 +1,16 @@
+<div class="bg-red-500">
+  <h1 class="text-3xl font-bold underline">
+    Hello world!
+  </h1>
+</div>
+
+@for (item of arrayNumbers;track item){
+{{ item }}
+}
+@empty {
+  There is no data
+}
+
+<div class="card flex justify-content-center">
+
+  <app-signals></app-signals>

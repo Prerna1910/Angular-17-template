@@ -1,0 +1,11 @@
+<!-- <p>First name: {{firstName()}}</p>
+<p>Last name: {{lastName()}}</p>
+Clicks: {{clicks}} -->
+
+<h1> Parent {{updatedValue }} </h1> <br>
+<button class="bg-blue-500 " (click)="updateValue()"> UPDATE VAlue of button</button>
+
+
+<br>
+
+<app-child [studentAge]="10"  [counterValue]="updatedValue" (greetingOutput)="getOutput($event)" (greetingClicked)="eventReceived()"> </app-child>
